@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: max(884px, 100dvh);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Cel Ink Outline & Hard Cast Shadow Tokens */
+.ink-border-heavy {
+  border: 1.5px solid #1E2B24;
+}
+
+.dark .ink-border-heavy {
+  border: 1.5px solid #d7e6db;
+}
+
+.cel-shadow-sm {
+  box-shadow: 2px 2px 0px 0px rgba(30, 43, 36, 0.9);
+}
+
+.cel-shadow {
+  box-shadow: 3px 3px 0px 0px rgba(30, 43, 36, 0.9);
+}
+
+.cel-shadow-md {
+  box-shadow: 3.5px 3.5px 0px 0px rgba(30, 43, 36, 0.92);
+}
+
+.cel-shadow-lg {
+  box-shadow: 4px 4px 0px 0px rgba(30, 43, 36, 0.95);
+}
+
+.dark .cel-shadow-sm {
+  box-shadow: 2px 2px 0px 0px rgba(10, 22, 16, 0.95);
+}
+
+.dark .cel-shadow,
+.dark .cel-shadow-md,
+.dark .cel-shadow-lg {
+  box-shadow: 4px 4px 0px 0px rgba(10, 22, 16, 0.95);
+}
+
+.cel-btn-active:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px rgba(30, 43, 36, 0.9);
+}
+
+/* Organic hand-drawn border radius */
+.ghibli-organic-radius {
+  border-radius: 16px 24px 18px 22px;
+}
+
+/* Paper Grain Backdrop Simulation */
+.paper-texture {
+  background-color: #fef8f6;
+  background-image: radial-gradient(rgba(30, 43, 36, 0.045) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.dark.paper-texture,
+.dark .paper-texture {
+  background-color: #1E2B24;
+  background-image: radial-gradient(rgba(251, 248, 241, 0.06) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+/* Perspective flip card */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Hide scrollbar for category pills */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle breeze light sweep effect on cards */
+.breeze-card {
+  position: relative;
+  overflow: hidden;
+}
+.breeze-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+}
+.breeze-card:hover::after {
+  left: 140%;
+}

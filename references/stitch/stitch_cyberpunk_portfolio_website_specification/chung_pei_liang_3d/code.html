@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>鍾沛良 // ATELIER CHUNG - 3D 視覺創作者 × 節奏表演者</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&amp;family=Nunito+Sans:ital,wght@0,300..900;1,300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#270b00",
+            "on-error": "#ffffff",
+            "secondary": "#0060ac",
+            "surface-container": "#f2edeb",
+            "surface-variant": "#e7e1df",
+            "on-error-container": "#93000a",
+            "outline-variant": "#c3c8c3",
+            "on-secondary-fixed-variant": "#004883",
+            "tertiary-fixed": "#ffdbca",
+            "on-primary": "#ffffff",
+            "surface-tint": "#546259",
+            "on-secondary-fixed": "#001c39",
+            "on-tertiary-fixed": "#331100",
+            "surface-bright": "#fef8f6",
+            "primary-fixed-dim": "#bbcac0",
+            "surface": "#fef8f6",
+            "primary": "#0a1610",
+            "on-primary-fixed": "#111e18",
+            "surface-container-highest": "#e7e1df",
+            "secondary-container": "#68abff",
+            "on-tertiary-container": "#d6763e",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#32302f",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#003e73",
+            "secondary-fixed": "#d4e3ff",
+            "background": "#fef8f6",
+            "tertiary-fixed-dim": "#ffb690",
+            "surface-container-low": "#f8f2f0",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#783200",
+            "primary-container": "#1e2b24",
+            "secondary-fixed-dim": "#a4c9ff",
+            "on-background": "#1d1b1a",
+            "primary-fixed": "#d7e6db",
+            "on-primary-container": "#849389",
+            "on-primary-fixed-variant": "#3c4a42",
+            "on-surface-variant": "#434844",
+            "tertiary-container": "#471b00",
+            "error": "#ba1a1a",
+            "on-surface": "#1d1b1a",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f5efed",
+            "surface-container-high": "#ede7e5",
+            "outline": "#737874",
+            "surface-dim": "#ded9d7",
+            "inverse-primary": "#bbcac0"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.75rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Literata", "serif"],
+            "body-sm": ["Nunito Sans", "sans-serif"],
+            "display": ["Literata", "serif"],
+            "headline-lg-mobile": ["Literata", "serif"],
+            "headline-md": ["Literata", "serif"],
+            "label-sm": ["Nunito Sans", "sans-serif"],
+            "body-lg": ["Nunito Sans", "sans-serif"],
+            "headline-sm": ["Literata", "serif"],
+            "label-lg": ["Nunito Sans", "sans-serif"],
+            "display-mobile": ["Literata", "serif"],
+            "label-md": ["Nunito Sans", "sans-serif"],
+            "body-md": ["Nunito Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-lg": ["36px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "700" }],
+            "display-mobile": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Cel Ink Outline & Hard Cast Shadow Tokens */
+    .ink-border-heavy {
+      border: 1.5px solid #1E2B24;
+    }
+    .cel-shadow-sm {
+      box-shadow: 2px 2px 0px 0px rgba(30, 43, 36, 0.9);
+    }
+    .cel-shadow {
+      box-shadow: 3px 3px 0px 0px rgba(30, 43, 36, 0.9);
+    }
+    .cel-shadow-lg {
+      box-shadow: 4px 4px 0px 0px rgba(30, 43, 36, 0.95);
+    }
+    .cel-btn-active:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px 0px rgba(30, 43, 36, 0.9);
+    }
+    /* Paper Grain Backdrop Simulation */
+    .paper-texture {
+      background-color: #fef8f6;
+      background-image: radial-gradient(rgba(30, 43, 36, 0.04) 1px, transparent 0);
+      background-size: 16px 16px;
+    }
+    /* Perspective flip card */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface paper-texture min-h-screen selection:bg-tertiary-fixed selection:text-tertiary pb-24 antialiased font-body-md text-body-md">
+<!-- Top Navigation Anchor (Shared Component: TopAppBar) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface-container-low/95 backdrop-blur-md px-gutter-mobile py-space-xs max-w-screen-md mx-auto shadow-[0_2px_0_0_rgba(30,43,36,0.12)] ink-border-heavy border-t-0 border-x-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-headline-sm" data-icon="palette">palette</span>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm text-primary tracking-wide leading-tight">鍾沛良 // ATELIER</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">作品記録・セルシェーディング</span>
+</div>
+</div>
+<div class="flex items-center space-x-2">
+<a class="flex items-center space-x-1 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary text-label-md font-label-md ink-border-heavy cel-shadow-sm active:translate-y-0.5 transition-transform" href="#contact">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+<span>手帳</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Container -->
+<main class="max-w-md mx-auto px-margin-mobile pt-20 space-y-space-xl">
+<!-- MODULE 1: HERO SECTION (Unique Self-Introduction & 3D Atelier) -->
+<section class="relative pt-2" id="hero">
+<!-- Creator Title & Badges -->
+<div class="flex flex-col space-y-2">
+<div class="inline-flex items-center self-start space-x-1.5 px-3 py-1 rounded-full bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary shadow-[1px_1px_0px_0px_rgba(30,43,36,0.5)]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#68B984] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-[#68B984]"></span>
+</span>
+<span class="tracking-wide">STATUS: 開放專案合作與職涯機會</span>
+</div>
+<h1 class="text-display-mobile font-display-mobile text-primary tracking-tight font-bold">
+          鍾沛良
+          <span class="block text-headline-sm font-headline-sm text-on-surface-variant font-medium mt-0.5 tracking-normal">
+            CHUNG PEI-LIANG
+          </span>
+</h1>
+<!-- Core Tag Capsule -->
+<div class="inline-block self-start bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-lg ink-border-heavy cel-shadow-sm text-label-md font-label-md font-bold">
+          22歲 ｜ 3D 視覺創作者 × 節奏表演者
+        </div>
+</div>
+<!-- Interactive 3D Canvas Diorama -->
+<div class="relative my-space-md">
+<div class="relative bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-lg overflow-hidden p-1 bg-gradient-to-b from-[#E8F1F5]/50 to-surface-container-low">
+<!-- 3D Scene Asset Embed with explicit class string requested -->
+<!-- STITCH_THREEJS_START:ANIMATION_6 class="w-full h-80 rounded-2xl overflow-hidden bg-transparent my-4 shadow-sm" -->
+<div class="w-full h-80 rounded-2xl overflow-hidden bg-transparent my-4 shadow-sm" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_6" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_6');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // Ghibli Watercolor & Cel-Shaded 3D Interactive Floating Island Scene
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || 360;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 3.5, 7.5);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+container.appendChild(renderer.domElement);
+
+// Lighting - Soft warm Ghibli sunlight & skylight
+const ambientLight = new THREE.AmbientLight(0xfff3e0, 1.2);
+scene.add(ambientLight);
+
+const sunLight = new THREE.DirectionalLight(0xfff9db, 1.8);
+sunLight.position.set(5, 10, 5);
+sunLight.castShadow = true;
+sunLight.shadow.mapSize.width = 1024;
+sunLight.shadow.mapSize.height = 1024;
+scene.add(sunLight);
+
+const skyBounceLight = new THREE.DirectionalLight(0xa6d1ff, 0.8);
+skyBounceLight.position.set(-5, -3, -5);
+scene.add(skyBounceLight);
+
+// Group for whole floating diorama
+const diorama = new THREE.Group();
+scene.add(diorama);
+
+// Island Base (Stylized Floating Moss & Dirt Rock)
+const rockGeo = new THREE.CylinderGeometry(2.4, 0.3, 2.2, 9);
+const rockMat = new THREE.MeshLambertMaterial({ color: 0x8b6b4f });
+const rock = new THREE.Mesh(rockGeo, rockMat);
+rock.position.y = -1.1;
+rock.receiveShadow = true;
+diorama.add(rock);
+
+// Grassy Top Layer
+const grassGeo = new THREE.CylinderGeometry(2.55, 2.4, 0.5, 12);
+const grassMat = new THREE.MeshLambertMaterial({ color: 0x68b984 });
+const grass = new THREE.Mesh(grassGeo, grassMat);
+grass.position.y = 0.05;
+grass.receiveShadow = true;
+diorama.add(grass);
+
+// Mini Cottage / Studio Cabin
+const cottageGroup = new THREE.Group();
+cottageGroup.position.set(-0.6, 0.3, -0.4);
+
+// House Walls (Parchment White Plaster)
+const wallGeo = new THREE.BoxGeometry(1.4, 1.2, 1.2);
+const wallMat = new THREE.MeshLambertMaterial({ color: 0xfdfaf2 });
+const walls = new THREE.Mesh(wallGeo, wallMat);
+walls.position.y = 0.6;
+walls.castShadow = true;
+walls.receiveShadow = true;
+cottageGroup.add(walls);
+
+// Roof (Terracotta Orange-Red Cel-Shade)
+const roofGeo = new THREE.ConeGeometry(1.3, 0.9, 4);
+const roofMat = new THREE.MeshLambertMaterial({ color: 0xd96b43 });
+const roof = new THREE.Mesh(roofGeo, roofMat);
+roof.rotation.y = Math.PI / 4;
+roof.position.y = 1.65;
+roof.castShadow = true;
+cottageGroup.add(roof);
+
+// Wooden Door & Window
+const doorGeo = new THREE.BoxGeometry(0.3, 0.6, 0.05);
+const woodMat = new THREE.MeshLambertMaterial({ color: 0x5c3d2e });
+const door = new THREE.Mesh(doorGeo, woodMat);
+door.position.set(0, 0.3, 0.62);
+cottageGroup.add(door);
+
+// Chimney with animated puff
+const chimneyGeo = new THREE.BoxGeometry(0.25, 0.6, 0.25);
+const chimney = new THREE.Mesh(chimneyGeo, rockMat);
+chimney.position.set(0.4, 1.6, -0.2);
+cottageGroup.add(chimney);
+
+diorama.add(cottageGroup);
+
+// Stylized Tree (Ghibli Fluffy Foliage)
+const treeGroup = new THREE.Group();
+treeGroup.position.set(1.3, 0.3, 0.6);
+
+const trunkGeo = new THREE.CylinderGeometry(0.12, 0.2, 1.1, 6);
+const trunk = new THREE.Mesh(trunkGeo, woodMat);
+trunk.position.y = 0.55;
+trunk.castShadow = true;
+treeGroup.add(trunk);
+
+const foliageMat1 = new THREE.MeshLambertMaterial({ color: 0x48a868 });
+const foliageMat2 = new THREE.MeshLambertMaterial({ color: 0x82cb7c });
+
+const f1 = new THREE.Mesh(new THREE.DodecahedronGeometry(0.7, 1), foliageMat1);
+f1.position.set(0, 1.2, 0);
+f1.castShadow = true;
+treeGroup.add(f1);
+
+const f2 = new THREE.Mesh(new THREE.DodecahedronGeometry(0.55, 1), foliageMat2);
+f2.position.set(0.3, 1.4, 0.2);
+f2.castShadow = true;
+treeGroup.add(f2);
+
+const f3 = new THREE.Mesh(new THREE.DodecahedronGeometry(0.5, 1), foliageMat1);
+f3.position.set(-0.25, 1.5, -0.15);
+f3.castShadow = true;
+treeGroup.add(f3);
+
+diorama.add(treeGroup);
+
+// 3D Work Desk & Artist Tools (Easel & Mic)
+const easelGroup = new THREE.Group();
+easelGroup.position.set(0.3, 0.3, 1.1);
+easelGroup.rotation.y = -Math.PI / 6;
+
+const canvasBoardGeo = new THREE.BoxGeometry(0.8, 0.6, 0.05);
+const canvasBoardMat = new THREE.MeshLambertMaterial({ color: 0xffffff });
+const board = new THREE.Mesh(canvasBoardGeo, canvasBoardMat);
+board.position.set(0, 0.7, 0);
+board.castShadow = true;
+easelGroup.add(board);
+
+const easelLegGeo = new THREE.CylinderGeometry(0.03, 0.03, 1.1);
+const l1 = new THREE.Mesh(easelLegGeo, woodMat);
+l1.position.set(-0.3, 0.55, 0.1);
+l1.rotation.z = 0.15;
+const l2 = new THREE.Mesh(easelLegGeo, woodMat);
+l2.position.set(0.3, 0.55, 0.1);
+l2.rotation.z = -0.15;
+easelGroup.add(l1);
+easelGroup.add(l2);
+
+diorama.add(easelGroup);
+
+// Wind Mill / Propeller on Cabin
+const propGroup = new THREE.Group();
+propGroup.position.set(0.4, 1.3, 0.62);
+const bladeGeo = new THREE.BoxGeometry(0.08, 0.7, 0.02);
+const bladeMat = new THREE.MeshLambertMaterial({ color: 0xf5c75b });
+const b1 = new THREE.Mesh(bladeGeo, bladeMat);
+const b2 = new THREE.Mesh(bladeGeo, bladeMat);
+b2.rotation.z = Math.PI / 2;
+propGroup.add(b1);
+propGroup.add(b2);
+cottageGroup.add(propGroup);
+
+// Floating Fluffy Ghibli Clouds
+const cloudsGroup = new THREE.Group();
+const cloudMat = new THREE.MeshLambertMaterial({ color: 0xffffff, transparent: true, opacity: 0.85 });
+function createCloud(x, y, z, scale) {
+  const g = new THREE.Group();
+  g.position.set(x, y, z);
+  const p1 = new THREE.Mesh(new THREE.SphereGeometry(0.5, 7, 7), cloudMat);
+  const p2 = new THREE.Mesh(new THREE.SphereGeometry(0.35, 7, 7), cloudMat);
+  p2.position.set(0.35, -0.05, 0);
+  const p3 = new THREE.Mesh(new THREE.SphereGeometry(0.4, 7, 7), cloudMat);
+  p3.position.set(-0.35, -0.05, 0);
+  g.add(p1, p2, p3);
+  g.scale.set(scale, scale * 0.7, scale);
+  return g;
+}
+const c1 = createCloud(-2.8, 1.5, -2, 1.1);
+const c2 = createCloud(2.5, 0.8, -1.5, 0.9);
+const c3 = createCloud(-1.2, -1.2, 1.8, 0.75);
+cloudsGroup.add(c1, c2, c3);
+scene.add(cloudsGroup);
+
+// Floating Pollen / Light Dust Particles
+const particleCount = 45;
+const pGeo = new THREE.BufferGeometry();
+const pPos = new Float32Array(particleCount * 3);
+for (let i = 0; i < particleCount * 3; i += 3) {
+  pPos[i] = (Math.random() - 0.5) * 8;
+  pPos[i + 1] = Math.random() * 5 - 1;
+  pPos[i + 2] = (Math.random() - 0.5) * 6;
+}
+pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+const pMat = new THREE.PointsMaterial({
+  color: 0xfffae0,
+  size: 0.12,
+  transparent: true,
+  opacity: 0.7
+});
+const particles = new THREE.Points(pGeo, pMat);
+scene.add(particles);
+
+// Interactive mouse parallax
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+window.addEventListener('mousemove', (e) => {
+  mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+  mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+// Render loop
+let clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+
+  // Floating gentle bobbing
+  diorama.position.y = Math.sin(t * 1.2) * 0.12;
+  diorama.rotation.y = Math.sin(t * 0.3) * 0.15;
+
+  // Propeller spin
+  propGroup.rotation.z += 0.04;
+
+  // Cloud gentle drifting
+  c1.position.x = -2.8 + Math.sin(t * 0.4) * 0.4;
+  c2.position.x = 2.5 + Math.cos(t * 0.35) * 0.35;
+  c3.position.x = -1.2 + Math.sin(t * 0.5) * 0.3;
+
+  // Particles gentle upward floating
+  const positions = particles.geometry.attributes.position.array;
+  for (let i = 1; i < particleCount * 3; i += 3) {
+    positions[i] += 0.005;
+    if (positions[i] > 4) positions[i] = -1.5;
+  }
+  particles.geometry.attributes.position.needsUpdate = true;
+
+  // Smooth mouse tilt
+  targetX += (mouseX * 0.4 - targetX) * 0.05;
+  targetY += (mouseY * 0.25 - targetY) * 0.05;
+  scene.rotation.y = targetX;
+  scene.rotation.x = targetY;
+
+  renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize', () => {
+  const newW = container.clientWidth || window.innerWidth;
+  const newH = container.clientHeight || 360;
+  camera.aspect = newW / newH;
+  camera.updateProjectionMatrix();
+  renderer.setSize(newW, newH);
+});
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_6 -->
+<!-- Tactile Instruction Pill Overlay -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center space-x-1.5 bg-surface-container-lowest/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full ink-border-heavy cel-shadow-sm pointer-events-none">
+<span class="material-symbols-outlined text-primary text-base animate-bounce" data-icon="touch_app">touch_app</span>
+<span class="text-label-sm font-label-sm text-primary tracking-wider font-semibold">拖曳視角探索雲端工作室</span>
+</div>
+</div>
+</div>
+<!-- Bio Pitch Snippet -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed px-1">
+        以手繪賽璐珞 (Cel-Shaded) 美學融合溫潤吉卜力調色，將音樂節奏與即時渲染技術灌注於 3D 空間雕塑。打造富有呼吸感、生命力與冒險溫度的立體奇幻宇宙。
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-space-sm">
+<a class="flex items-center justify-center space-x-2 bg-primary text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-xl ink-border-heavy cel-shadow cel-btn-active transition-all" href="#featured-works">
+<span class="material-symbols-outlined text-lg" data-icon="meeting_room">meeting_room</span>
+<span>推開工作室大門 (瀏覽作品)</span>
+</a>
+<a class="flex items-center justify-center space-x-2 bg-surface-container text-primary font-label-lg text-label-lg px-6 py-3.5 rounded-xl ink-border-heavy cel-shadow-sm cel-btn-active transition-all" href="#about">
+<span class="material-symbols-outlined text-lg" data-icon="explore">explore</span>
+<span>查看冒險履歷</span>
+</a>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="flex items-center justify-center space-x-3 py-1 opacity-70">
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+<span class="material-symbols-outlined text-primary text-base" data-icon="spa">spa</span>
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+</div>
+<!-- MODULE 2: FEATURED WORKS & CASE STUDIES (精選 3D 作品與案例研究) -->
+<section class="space-y-space-md" id="featured-works">
+<div class="space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-headline-sm" data-icon="brush">brush</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">精選作品研究</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Handcrafted Cel-Shaded Models &amp; Storyboard Dioramas
+        </p>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center space-x-2 overflow-x-auto pb-2 -mx-margin-mobile px-margin-mobile no-scrollbar" id="categoryFilter">
+<button class="filter-btn active shrink-0 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm font-bold bg-primary text-on-primary ink-border-heavy cel-shadow-sm" data-category="all">
+          全部作品 (All)
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-low text-on-surface-variant ink-border-heavy cel-shadow-sm" data-category="character">
+          角色模型 (Character)
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-low text-on-surface-variant ink-border-heavy cel-shadow-sm" data-category="env">
+          場景與建築 (Environment)
+        </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-low text-on-surface-variant ink-border-heavy cel-shadow-sm" data-category="props">
+          風格化道具 (Props)
+        </button>
+</div>
+<!-- Storybook Work Cards Grid -->
+<div class="space-y-space-md" id="projectsContainer">
+<!-- Work 1: 空賊飛行艇・風切丸 -->
+<article class="project-card bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-md overflow-hidden transition-all hover:-translate-y-1" data-cat="props">
+<div class="relative h-52 w-full border-b-[1.5px] border-primary overflow-hidden bg-[#E8F1F5]/40">
+<img class="w-full h-full object-cover" data-alt="A fantastical Miyazaki-style cel-shaded dieselpunk airship named Kazekirimaru with wooden hull and brass propellers cruising through fluffy watercolor cumulus clouds at dawn. Painted in warm parchment textures with ink contours, sunlight washes of saffron yellow and pastel sky blue, embodying hand-drawn Japanese animation aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyGpKMYvbevmGY6TFdeYRlp4NUcmV6RJTfBtHwjgwWgjdiDjA7oMseGcrnr-F4iR5ASGuvjjR2iObwTG8rQZzxiR7OsRDYO40qUAr7wPL3GF4SLQBbW3L_MA-1cJ3evx7Nh4DECf5m0gG_SvGjVIYlNfgoErncTucxvgoBj_zqqfbx4pb5liBTosumQ5NdKJCSF6-Qu2UAGDl8fu5JyRRs86yTR6z5n3ipFihAAZM"/>
+<div class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold shadow-[2px_2px_0px_0px_rgba(30,43,36,0.8)]">
+              45K Faces
+            </div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur text-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold">
+              4K Cel-Texture
+            </div>
+</div>
+<div class="p-space-md space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-bold tracking-wider">PROJECT NO. 01 // STYLIZED AIRSHIP</span>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">「空賊飛行艇・風切丸」</h3>
+</div>
+<button class="p-2 rounded-lg bg-surface-container text-primary ink-border-heavy cel-shadow-sm cel-btn-active" onclick="openInspectorModal('空賊飛行艇・風切丸', '45K Polygons', '4K Cel-Textured Map', 'Blender / Substance Painter', '運用非真實感渲染 (NPR) 拓撲技術，還原厚塗水彩在黃銅鈑金與木製舵輪上的磨損觸感。')">
+<span class="material-symbols-outlined text-lg" data-icon="view_in_ar">view_in_ar</span>
+</button>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              以吉卜力機械奇想為雛型。全手繪邊緣法線貼圖與逆向外擴描邊 (Inverted Hull Outline)，展現翱翔於高空氣流的冒險精神。
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Inverted Hull</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Substance 3D</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Stylized PBR</span>
+</div>
+</div>
+</article>
+<!-- Work 2: 森林守護獸・青嵐 -->
+<article class="project-card bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-md overflow-hidden transition-all hover:-translate-y-1" data-cat="character">
+<div class="relative h-52 w-full border-b-[1.5px] border-primary overflow-hidden bg-[#68B984]/20">
+<img class="w-full h-full object-cover" data-alt="A stylized Ghibli woodland spirit creature named Seiran resembling an organic moss-covered stone lion with glowing amber eyes and leaf mane, sitting in a serene enchanted moss forest. Warm sunbeams filter through towering ancient cedar branches, hand-painted gouache watercolor texture palette with soft cel shading lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0HXaAJlMLz_LUXI2V-OV7jSyt5XTmbz5T0FwPgq5tKfUOGKU_FUAaSH0-9jIR5BPVJgyDTeylR-wU5JaELYgxQBhV_IibZ1V1g_AeIRxjF86ebIaKLZaYh7BI_bSMnzABsFDAujotzexLOTgyZjjRlr_xmHules2J6PlHzsZQoe2hiGEeOHei2OxShFUgfcsbnAxErEYvB8VHmhJJZT31LjYhVZI0kpQ4TXOU-UA"/>
+<div class="absolute top-3 left-3 bg-[#68B984] text-on-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold shadow-[2px_2px_0px_0px_rgba(30,43,36,0.8)]">
+              28K Verts
+            </div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur text-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold">
+              Hand-Painted
+            </div>
+</div>
+<div class="p-space-md space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-label-sm font-label-sm text-[#0060ac] font-bold tracking-wider">PROJECT NO. 02 // SPIRIT CREATURE</span>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">「森林守護獸・青嵐」</h3>
+</div>
+<button class="p-2 rounded-lg bg-surface-container text-primary ink-border-heavy cel-shadow-sm cel-btn-active" onclick="openInspectorModal('森林守護獸・青嵐', '28K Vertices', '2K Hand-Painted Wash', 'ZBrush / Blender', '有機生物雕刻與苔蘚毛髮的面片排布，結合表情骨架控制器 (Facial Blendshapes) 與呼吸起伏循環。')">
+<span class="material-symbols-outlined text-lg" data-icon="view_in_ar">view_in_ar</span>
+</button>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              從草圖雕刻至毛髮面片 (Hair Cards) 均手工排布，賦予古老森林生靈沉靜而溫柔的生命感，支援自定義呼吸骨架動畫。
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Character Rig</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Blendshapes</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Watercolor Shading</span>
+</div>
+</div>
+</article>
+<!-- Work 3: 雲端溫室與藥草工作台 -->
+<article class="project-card bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-md overflow-hidden transition-all hover:-translate-y-1" data-cat="env">
+<div class="relative h-52 w-full border-b-[1.5px] border-primary overflow-hidden bg-[#F5C75B]/20">
+<img class="w-full h-full object-cover" data-alt="An isometric 3D diorama of an alchemist greenhouse workshop filled with hanging glass terrariums, potion vials, brass astrolabes, and sunlit ivy creeping over wooden window frames. Soft warm daylight fills the interior scene, hand-inked line work, nostalgic cel anime aesthetic reminiscent of classic Studio Ghibli architectural backgrounds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbHPNDqJ2qzBPWTX-8SD_DkMsKn8gcvnqq3ss7Gmb6SuzP4aOilmWlTmY8aIxj9WFuB3UseFeS5Z0C-f8Ra90dg-AVsmRQr--K6W-GiDEAoIwjOl2WsNwiPfgPUm-nnx02Nglbl9mPUdruL0yRzg847qrPw84x6gr3mX1Wv8yNRjuEHtUd2OMCh3T5XgpCAEkqKcbQcjqhGjNp7I5eu3x-80ex369oZQWhvPeMlK8"/>
+<div class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold shadow-[2px_2px_0px_0px_rgba(30,43,36,0.8)]">
+              62K Faces
+            </div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur text-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold">
+              Toon Lighting
+            </div>
+</div>
+<div class="p-space-md space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-bold tracking-wider">PROJECT NO. 03 // DIORAMA ENVIRONMENT</span>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">「雲端溫室與藥草工作台」</h3>
+</div>
+<button class="p-2 rounded-lg bg-surface-container text-primary ink-border-heavy cel-shadow-sm cel-btn-active" onclick="openInspectorModal('雲端溫室與藥草工作台', '62K Faces', '4K Trim Sheet + Decals', 'Blender / Unity URP', '模組化建築組件配合即時自定義卡通著色器 (Custom Toon Shader)，可自如切換白晝暖陽與黃昏暮光。')">
+<span class="material-symbols-outlined text-lg" data-icon="view_in_ar">view_in_ar</span>
+</button>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              模組化室內微縮場景。透過 Trim Sheets 貼圖極大化重複運用效率，並運用 Unity URP 卡通著色器展現晨昏日光過渡。
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Modular Kit</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Trim Sheets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Lighting Moods</span>
+</div>
+</div>
+</article>
+<!-- Work 4: 發條音樂盒與唱片機 -->
+<article class="project-card bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-md overflow-hidden transition-all hover:-translate-y-1" data-cat="props">
+<div class="relative h-52 w-full border-b-[1.5px] border-primary overflow-hidden bg-[#E8F1F5]/30">
+<img class="w-full h-full object-cover" data-alt="A vintage clockwork music box combined with an ornate gramophone, featuring rotating gears, luminous sound crystal, and brass sound horn etched with stylized musical runes. Set on a wooden desk covered in parchment sketches, illuminated by warm candle flame and ambient sky light, cel-shaded animation style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZqj9Qh6GdGzPrWwF8PkGav2HQZ4IQjrxwtRxz2mZR3gUiqQWr9T43_6CQfg4yy31mh4CfwO6o0noatRMT_szE--b5nD3sGNfplX0plyz62JtlxgpCbbt-r955Ih4iUxlFJdrCMad1nS_oZyX6PbI2cKoCmlp3reAie0pjdug9dOObjupskHiJqxEk_Y8PVHsnYTKUee7DE3ZIkVB6sjwRPmChMhZM2rzAD_3xvDM"/>
+<div class="absolute top-3 left-3 bg-[#F28C52] text-on-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold shadow-[2px_2px_0px_0px_rgba(30,43,36,0.8)]">
+              16K Faces
+            </div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur text-primary px-2.5 py-0.5 rounded ink-border-heavy text-label-sm font-label-sm font-bold">
+              Mechanical Anim
+            </div>
+</div>
+<div class="p-space-md space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-bold tracking-wider">PROJECT NO. 04 // RHYTHM PROP</span>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">「發條音樂盒與唱片機」</h3>
+</div>
+<button class="p-2 rounded-lg bg-surface-container text-primary ink-border-heavy cel-shadow-sm cel-btn-active" onclick="openInspectorModal('發條音樂盒與唱片機', '16K Faces', '2K PBR Stylized', 'Blender / Unity', '精準匹配 120 BPM 搖擺節奏齒輪嚙合連鎖動畫，將打擊樂點與金屬反光閃爍完美對齊。')">
+<span class="material-symbols-outlined text-lg" data-icon="view_in_ar">view_in_ar</span>
+</button>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              將節奏創作者對音樂的感知具象化為機械運動。精準 120 BPM 旋律齒輪咬合動畫，呈現聲音與造型的共振。
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">BPM Sync</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Mechanical Rig</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high ink-border-heavy text-label-sm font-label-sm text-primary">Sound FX Link</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- INTERACTIVE 3D MODEL INSPECTION DRAWER/MODAL (Mockup) -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm hidden flex items-end sm:items-center justify-center p-0 sm:p-4 transition-opacity duration-200" id="inspectorModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-t-3xl sm:rounded-2xl ink-border-heavy cel-shadow-lg p-space-md space-y-space-md transform transition-transform">
+<div class="flex justify-between items-center pb-2 border-b-[1.5px] border-primary/20">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary" data-icon="view_in_ar">view_in_ar</span>
+<h4 class="text-headline-sm font-headline-sm text-primary font-bold" id="modalTitle">作品 3D 檢視器</h4>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary ink-border-heavy cel-btn-active" onclick="closeInspectorModal()">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</button>
+</div>
+<!-- Render Mode Switcher -->
+<div class="flex justify-around bg-surface-container p-1 rounded-xl ink-border-heavy text-label-sm font-label-sm">
+<button class="mode-btn px-3 py-1 rounded-lg bg-surface-container-lowest text-primary font-bold ink-border-heavy shadow-sm">Cel-Shaded</button>
+<button class="mode-btn px-3 py-1 rounded-lg text-on-surface-variant font-medium">Wireframe</button>
+<button class="mode-btn px-3 py-1 rounded-lg text-on-surface-variant font-medium">Matcap Clay</button>
+</div>
+<!-- Before/After Slider Simulated Canvas -->
+<div class="relative h-44 rounded-xl ink-border-heavy overflow-hidden bg-surface-container-low flex items-center justify-center">
+<div class="absolute inset-0 bg-[#E8F1F5]/50 flex items-center justify-center text-on-surface-variant text-label-md font-label-md">
+<div class="text-center space-y-1">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="3d_rotation">3d_rotation</span>
+<p class="font-bold text-primary">3D 即時視圖交互檢驗中</p>
+<p class="text-label-sm text-on-surface-variant">2D 手繪設定稿 ⇄ 3D 拓撲佈線 滑動對比</p>
+</div>
+</div>
+</div>
+<!-- Stats Breakdown -->
+<div class="grid grid-cols-2 gap-2 text-label-sm font-label-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-low ink-border-heavy">
+<span class="text-on-surface-variant block">多邊形面數</span>
+<span class="font-bold text-primary text-body-md" id="modalFaces">45,000 Faces</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low ink-border-heavy">
+<span class="text-on-surface-variant block">貼圖規格</span>
+<span class="font-bold text-primary text-body-md" id="modalTexture">4K Cel-Textured Map</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low ink-border-heavy">
+<span class="text-on-surface-variant block text-label-sm">核心工法筆記</span>
+<p class="text-body-sm font-body-sm text-primary mt-0.5" id="modalNotes">
+            運用非真實感渲染 (NPR) 拓撲技術，還原厚塗水彩在黃銅鈑金與木製舵輪上的磨損觸感。
+          </p>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary text-label-md font-label-md font-bold ink-border-heavy cel-shadow-sm cel-btn-active" onclick="closeInspectorModal()">
+          關閉檢視視窗
+        </button>
+</div>
+</div>
+<!-- SECTION DIVIDER -->
+<div class="flex items-center justify-center space-x-3 py-1 opacity-70">
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+<span class="material-symbols-outlined text-primary text-base" data-icon="auto_stories">auto_stories</span>
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+</div>
+<!-- MODULE 3: ABOUT ME & SKILLS (關於我與冒險者手帳 / 創作者素質面板) -->
+<section class="space-y-space-md" id="about">
+<div class="space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[#F28C52] text-headline-sm" data-icon="draw">draw</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">冒險手帳與創作者面板</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Creator Stats, Dimensional Radar &amp; Rhythm Flow
+        </p>
+</div>
+<!-- Warm Parchment Letter & Interactive Flip Avatar Card -->
+<div class="bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-lg p-space-md space-y-space-md relative overflow-hidden">
+<!-- Header with Interactive Flip Avatar -->
+<div class="flex items-center space-x-4">
+<div class="perspective-1000 w-24 h-24 shrink-0 cursor-pointer" onclick="toggleAvatarFlip(this)" title="點擊切換 2D手繪肖像 / 3D Q版公仔">
+<div class="relative w-full h-full transform-style-3d transition-transform duration-500 rounded-xl ink-border-heavy cel-shadow-sm" id="avatarCardInner">
+<!-- Front: 2D Ghibli Watercolor Portrait -->
+<div class="absolute inset-0 backface-hidden rounded-xl overflow-hidden bg-[#FBF8F1]">
+<img class="w-full h-full object-cover" data-alt="A warm hand-drawn Studio Ghibli style watercolor 2D self-portrait of a thoughtful 22-year-old Taiwanese male 3D artist wearing glasses, loose linen shirt, holding a wooden stylus pencil against a soft pastel amber meadow backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPgCS8iTw5pJCZLsDhWkhtUMZ9mRsXEVdnCbifsUJuSEzN8wjT2Nf7R0VLlJYtoxNW__NIs_8Ehp3O_SrWVw2sI6yOB2cwAl4n7nBu3yIX8U8jU03fFrldsIRjY76GnnJki_L8J6RtVsYp4GtcPPGH8Q_Ta2faJnb-HfirBG3M20uDVt1zzsj8J_EbzKgYWCVADN3B-jMFCJrafPbAiDYdQkRCEtB8cbnlWZlE4uk"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 py-0.2 rounded text-[9px] font-bold ink-border-heavy">2D 手繪</span>
+</div>
+<!-- Back: 3D Stylized Chibi Figure -->
+<div class="absolute inset-0 backface-hidden rotate-y-180 rounded-xl overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="A stylized 3D collectible vinyl chibi figure of Chung Pei-Liang with oversized headphones, hip hop streetwear hoodie, and miniature glowing digital sculpting tablet in hand, rendered with cel-shaded anime textures and crisp specular rim lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaSO7kJ7FsjoZD9E9LQrRjsb1V0-gxU5AV8puKbjORS6kOGTMWjcnVlCP0WbDZ-jo0SRCb_cP5KVkY1TRQrIj9CU5pR8MtEMH2jNXMcFRUB5ZzYOnENMooLnVPWDpgKd2_UjGqIgvKLAS0iYS1T6cocbyJlVqxV_qo4Nv5molHIq-nUeylY-1YISRgnufBbsY0R0OUe_2l3Q_6HQhz4CYFH72P4zPClbvJdvt9HBY"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 py-0.2 rounded text-[9px] font-bold ink-border-heavy">3D Q版</span>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex items-center space-x-1.5">
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">鍾沛良</h3>
+<span class="text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-bold ink-border-heavy">LV. 22 創作者</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant font-medium">
+              3D Artist &amp; Rhythm Performer
+            </p>
+<p class="text-label-sm font-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="sync">sync</span> 點擊頭像翻轉 2D/3D 形態
+            </p>
+</div>
+</div>
+<!-- Handcrafted Letter Text -->
+<div class="p-3.5 bg-surface-container-low rounded-xl ink-border-heavy border-dashed text-body-sm font-body-sm text-on-surface-variant leading-relaxed space-y-2">
+<p>
+            「你好！我是 22 歲的沛良。對我而言，3D 建模從不只是冷冰冰的多邊形頂點組合，而是在數位螢幕裡堆疊出有溫度、會呼吸的手作工藝品。」
+          </p>
+<p>
+            從賽璐珞動畫電影的溫厚筆觸，到動態捕捉中的即興身體旋律，我擅長將表演藝術的節奏起伏轉換為立體空間的動態靈魂。
+          </p>
+</div>
+<!-- 3D Skill Metrics (Radar / Proficiency Bars) -->
+<div class="space-y-3 pt-1">
+<h4 class="text-label-lg font-label-lg text-primary font-bold flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+<span>核心素質能力 (3D Skill Metrics)</span>
+</h4>
+<div class="space-y-2.5">
+<!-- Metric 1 -->
+<div>
+<div class="flex justify-between text-label-sm font-label-sm font-bold text-primary mb-1">
+<span>手繪與 PBR 貼圖 (Texturing)</span>
+<span>96%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high ink-border-heavy overflow-hidden p-0.5">
+<div class="h-full bg-[#68B984] rounded-full transition-all duration-1000" style="width: 96%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div>
+<div class="flex justify-between text-label-sm font-label-sm font-bold text-primary mb-1">
+<span>高模雕刻 (Sculpting)</span>
+<span>95%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high ink-border-heavy overflow-hidden p-0.5">
+<div class="h-full bg-[#F5C75B] rounded-full transition-all duration-1000" style="width: 95%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div>
+<div class="flex justify-between text-label-sm font-label-sm font-bold text-primary mb-1">
+<span>拓撲佈線 (Topology)</span>
+<span>92%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high ink-border-heavy overflow-hidden p-0.5">
+<div class="h-full bg-[#68abff] rounded-full transition-all duration-1000" style="width: 92%"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div>
+<div class="flex justify-between text-label-sm font-label-sm font-bold text-primary mb-1">
+<span>即時引擎整合 (Engine Integration)</span>
+<span>90%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high ink-border-heavy overflow-hidden p-0.5">
+<div class="h-full bg-[#F28C52] rounded-full transition-all duration-1000" style="width: 90%"></div>
+</div>
+</div>
+<!-- Metric 5 -->
+<div>
+<div class="flex justify-between text-label-sm font-label-sm font-bold text-primary mb-1">
+<span>骨架綁定與動畫 (Rigging &amp; Anim)</span>
+<span>88%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high ink-border-heavy overflow-hidden p-0.5">
+<div class="h-full bg-primary-container rounded-full transition-all duration-1000" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toolkit Satchel (Software Icons / Tags) -->
+<div class="pt-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold block mb-2">常備冒險裝備箱 (Toolkit Satchel)</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-md font-label-md ink-border-heavy cel-shadow-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-[#F28C52]"></span>
+<span>Blender</span>
+</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-md font-label-md ink-border-heavy cel-shadow-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-[#68B984]"></span>
+<span>Substance Painter</span>
+</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-md font-label-md ink-border-heavy cel-shadow-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Photoshop</span>
+</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-md font-label-md ink-border-heavy cel-shadow-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-[#93000a]"></span>
+<span>Premiere Pro</span>
+</span>
+<span class="px-3 py-1 rounded-lg bg-surface-container-high text-primary font-label-md font-label-md ink-border-heavy cel-shadow-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Unity 3D</span>
+</span>
+</div>
+</div>
+<!-- Special Talent Feature Card: 節奏共鳴 (Rhythm & Flow) -->
+<div class="mt-4 p-space-md rounded-xl bg-gradient-to-br from-tertiary-fixed/40 to-surface-container-low ink-border-heavy cel-shadow space-y-2 border-l-4 border-l-[#F28C52]">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[#F28C52] text-xl" data-icon="graphic_eq">graphic_eq</span>
+<h4 class="text-headline-sm font-headline-sm text-primary font-bold">「節奏共鳴 (Rhythm &amp; Flow)」</h4>
+</div>
+<p class="text-label-md font-label-md text-tertiary font-bold">唱、跳、Rap 跨界賦能 3D 動態美學</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            音樂節拍的切分音 (Syncopation) 與身體律動，深層反哺著 3D 動畫製作時的預備動作 (Anticipation)、緩入緩出 (Spacing) 與停頓留白 (Ma)。讓每一個轉角、每一幀揮擊都自帶旋律的重量與張力。
+          </p>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="flex items-center justify-center space-x-3 py-1 opacity-70">
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+<span class="material-symbols-outlined text-primary text-base" data-icon="map">map</span>
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+</div>
+<!-- MODULE 4: CAREER TRAJECTORY & VISION (手繪冒險地圖 / 職涯發展路徑) -->
+<section class="space-y-space-md" id="career">
+<div class="space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-headline-sm" data-icon="explore">explore</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">冒險地圖與職涯願景</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Hand-Drawn Expedition Roadmap &amp; Milestones
+        </p>
+</div>
+<!-- Hand-Inked Timeline Track -->
+<div class="relative pl-6 space-y-space-md before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-primary/30 before:border-dashed before:border-l-[1.5px] before:border-primary">
+<!-- Stage 1 (Current) -->
+<div class="relative bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow p-space-md space-y-2">
+<div class="absolute -left-[30px] top-4 w-5 h-5 rounded-full bg-[#F5C75B] ink-border-heavy shadow-[1px_1px_0px_0px_rgba(30,43,36,0.9)] flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex justify-between items-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-bold bg-[#68B984]/20 text-primary ink-border-heavy">CURRENT // STAGE 01</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold">22 歲・當下</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">起點與深耕：風格化 3D 專精</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            打磨個人風格化 3D 角色與場景資產管線，精熟 NPR 卡通著色渲染與即時引擎展示。以扎實的多邊形素質與水彩質感建立獨特視覺語彙。
+          </p>
+</div>
+<!-- Stage 2 (Short-Term) -->
+<div class="relative bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow p-space-md space-y-2">
+<div class="absolute -left-[30px] top-4 w-5 h-5 rounded-full bg-[#F28C52] ink-border-heavy shadow-[1px_1px_0px_0px_rgba(30,43,36,0.9)] flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex justify-between items-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-bold bg-[#E8F1F5] text-secondary ink-border-heavy">SHORT-TERM // STAGE 02</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold">1 ~ 3 年目標</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">商業實戰與跨界整合</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            投身具鮮明美學的原創遊戲或動畫工作室，擔任 3D 美術設計師。深度融入動態節奏感，主導關鍵角色動作表演與沉浸式場景。
+          </p>
+</div>
+<!-- Stage 3 (Long-Term) -->
+<div class="relative bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow p-space-md space-y-2">
+<div class="absolute -left-[30px] top-4 w-5 h-5 rounded-full bg-[#68abff] ink-border-heavy shadow-[1px_1px_0px_0px_rgba(30,43,36,0.9)] flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex justify-between items-center">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm font-bold bg-tertiary-fixed text-tertiary ink-border-heavy">LONG-TERM // STAGE 03</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold">願景航道</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">全方位視覺敘事者 (Art Director)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            晉身 3D 視覺指導與跨領域藝術總監。開創融合空間光影、節奏聲響與敘事溫度的原創 IP，帶領觀眾穿梭於現實與手繪幻想的交界。
+          </p>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="flex items-center justify-center space-x-3 py-1 opacity-70">
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+<span class="material-symbols-outlined text-primary text-base" data-icon="local_post_office">local_post_office</span>
+<span class="h-0.5 w-12 bg-primary/20 rounded-full"></span>
+</div>
+<!-- MODULE 5: CONTACT & AIR POST (空中郵局 / 瓶中信聯絡專區) -->
+<section class="space-y-space-md" id="contact">
+<div class="space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-headline-sm" data-icon="mail">mail</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">空中郵局・瓶中信</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Direct Air Post Desk &amp; Project Dispatch
+        </p>
+</div>
+<!-- Direct Contact Fast-Access Cards -->
+<div class="space-y-2.5">
+<!-- Phone Card with Copy Button -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest ink-border-heavy cel-shadow-sm">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center ink-border-heavy text-primary">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant block">專案熱線 (Hotline)</span>
+<span class="text-headline-sm font-headline-sm text-primary font-bold tracking-wider">6663629</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary text-label-sm font-label-sm font-bold ink-border-heavy cel-shadow-sm cel-btn-active flex items-center space-x-1" onclick="copyToClipboard('6663629', this)">
+<span class="material-symbols-outlined text-xs" data-icon="content_copy">content_copy</span>
+<span>複製號碼</span>
+</button>
+</div>
+<!-- Email Card with Copy Button -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest ink-border-heavy cel-shadow-sm">
+<div class="flex items-center space-x-3 overflow-hidden">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center ink-border-heavy text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div class="truncate">
+<span class="text-label-sm font-label-sm text-on-surface-variant block">電子信箱 (Air Post Mail)</span>
+<span class="text-body-md font-body-md text-primary font-bold truncate block">qwer878787@gmail.com</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary text-label-sm font-label-sm font-bold ink-border-heavy cel-shadow-sm cel-btn-active flex items-center space-x-1 ml-2" onclick="copyToClipboard('qwer878787@gmail.com', this)">
+<span class="material-symbols-outlined text-xs" data-icon="content_copy">content_copy</span>
+<span>複製信箱</span>
+</button>
+</div>
+</div>
+<!-- Postcard Style Contact Form -->
+<form class="bg-surface-container-lowest rounded-2xl ink-border-heavy cel-shadow-lg p-space-md space-y-4 relative" onsubmit="handlePostSubmit(event)">
+<div class="flex justify-between items-center pb-2 border-b-[1.5px] border-primary/20">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-tertiary" data-icon="mark_email_read">mark_email_read</span>
+<span class="text-label-lg font-label-lg text-primary font-bold">寄出一封空中信札</span>
+</div>
+<!-- Japanese Stamp Motif -->
+<div class="w-12 h-14 rounded bg-[#E8F1F5] ink-border-heavy border-dashed flex flex-col items-center justify-center p-1 text-[9px] font-bold text-primary rotate-3">
+<span>航空便</span>
+<span class="text-[12px] font-serif">壹枚</span>
+</div>
+</div>
+<div class="space-y-3">
+<div>
+<label class="block text-label-sm font-label-sm text-primary font-bold mb-1">您的稱呼 (Your Name)</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low ink-border-heavy text-body-sm font-body-sm text-primary focus:outline-none focus:ring-0 focus:border-secondary focus:shadow-[2px_2px_0px_0px_#0060ac]" placeholder="例：宮崎旅人 / 專案總監" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-primary font-bold mb-1">您的聯絡信箱 (Email)</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low ink-border-heavy text-body-sm font-body-sm text-primary focus:outline-none focus:ring-0 focus:border-secondary focus:shadow-[2px_2px_0px_0px_#0060ac]" placeholder="name@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-primary font-bold mb-1">合作類型 (Collaboration Type)</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low ink-border-heavy text-body-sm font-body-sm text-primary focus:outline-none focus:ring-0 focus:border-secondary focus:shadow-[2px_2px_0px_0px_#0060ac]">
+<option>全職工作機會 / 職涯邀約</option>
+<option>3D 角色 / 場景委託專案</option>
+<option>音樂節奏與動態跨界表演合作</option>
+<option>學術與技術靈感交流</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-primary font-bold mb-1">信札內容 (Message Content)</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low ink-border-heavy text-body-sm font-body-sm text-primary focus:outline-none focus:ring-0 focus:border-secondary focus:shadow-[2px_2px_0px_0px_#0060ac]" placeholder="請描述您的專案願景、時程或任何想與沛良探討的想法..." required="" rows="4"></textarea>
+</div>
+</div>
+<button class="w-full py-3.5 rounded-xl bg-[#F28C52] text-on-primary text-label-lg font-label-lg font-bold ink-border-heavy cel-shadow cel-btn-active flex items-center justify-center space-x-2 transition-transform" type="submit">
+<span class="material-symbols-outlined text-lg" data-icon="send">send</span>
+<span>蓋印封蠟並寄出 (Dispatch Message)</span>
+</button>
+<p class="text-center text-label-sm font-label-sm font-bold text-[#68B984] hidden animate-fade-in" id="submitSuccess">
+          ✓ 信札已成功送往雲端郵局！沛良將盡快給予回覆。
+        </p>
+</form>
+</section>
+</main>
+<!-- Global Footer (Shared Component: Footer) -->
+<footer class="w-full py-space-lg px-gutter-mobile flex flex-col items-center text-center space-y-space-sm pb-24 mt-space-xl border-t border-dashed border-primary/30 bg-surface-container">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-headline-sm" data-icon="flight">flight</span>
+<span class="text-headline-sm font-headline-sm text-primary font-bold">鍾沛良 // ATELIER</span>
+</div>
+<div class="flex flex-wrap justify-center gap-4 text-body-sm font-body-sm">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="tel:6663629">Hotline: 6663629</a>
+<span class="text-primary/30">•</span>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="mailto:qwer878787@gmail.com">Email: qwer878787@gmail.com</a>
+<span class="text-primary/30">•</span>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#contact">Air Post Desk</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+      © 2026 鍾沛良 Chung Pei-Liang. Crafted with Cel &amp; Paper.
+    </p>
+<!-- Back to Top Glider -->
+<a class="inline-flex items-center space-x-1 text-label-sm font-label-sm text-secondary font-bold hover:underline mt-2" href="#hero">
+<span class="material-symbols-outlined text-sm" data-icon="north">north</span>
+<span>乘風滑翔回到頂部</span>
+</a>
+</footer>
+<!-- Bottom Navigation Anchor (Shared Component: BottomNavBar) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs pb-safe bg-surface-container-lowest dark:bg-surface-container-low border-t border-primary/20 shadow-[0_-3px_0_0_rgba(30,43,36,0.15)] max-w-screen-md mx-auto">
+<!-- Tab 1: 物語 (Stories / Intro) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 nav-tab active" data-tab="hero" href="#hero">
+<span class="material-symbols-outlined text-headline-sm" data-icon="auto_stories">auto_stories</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">物語</span>
+</a>
+<!-- Tab 2: 作品集 (Works) - Highlighted as Active Portfolio core -->
+<a class="flex flex-col items-center justify-center bg-tertiary-fixed dark:bg-primary-container text-tertiary dark:text-on-primary-container rounded-lg px-3 py-1 shadow-[2px_2px_0_0_rgba(30,43,36,0.2)] nav-tab" data-tab="featured-works" href="#featured-works">
+<span class="material-symbols-outlined text-headline-sm" data-icon="brush">brush</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">作品集</span>
+</a>
+<!-- Tab 3: 草図 (About / Sketches) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 nav-tab" data-tab="about" href="#about">
+<span class="material-symbols-outlined text-headline-sm" data-icon="draw">draw</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">草図</span>
+</a>
+<!-- Tab 4: 通信 (Contact / Mail) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 nav-tab" data-tab="contact" href="#contact">
+<span class="material-symbols-outlined text-headline-sm" data-icon="mail">mail</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">通信</span>
+</a>
+</nav>
+<!-- Interactive JavaScript logic -->
+<script>
+    // Copy to clipboard helper
+    function copyToClipboard(text, btnElement) {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalHtml = btnElement.innerHTML;
+        btnElement.innerHTML = `<span class="material-symbols-outlined text-xs">check</span><span>已複製</span>`;
+        setTimeout(() => {
+          btnElement.innerHTML = originalHtml;
+        }, 1800);
+      }).catch(err => {
+        alert("複製失敗，請手動複製: " + text);
+      });
+    }
+
+    // Avatar Flip Toggle
+    function toggleAvatarFlip(container) {
+      const card = document.getElementById('avatarCardInner');
+      card.classList.toggle('rotate-y-180');
+    }
+
+    // Category Filter pills
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'active');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'active');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        const category = btn.getAttribute('data-category');
+        projectCards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-cat') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Inspector Modal Mockup Interactions
+    function openInspectorModal(title, faces, texture, tools, notes) {
+      const modal = document.getElementById('inspectorModal');
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalFaces').innerText = faces;
+      document.getElementById('modalTexture').innerText = texture;
+      document.getElementById('modalNotes').innerText = notes;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeInspectorModal() {
+      const modal = document.getElementById('inspectorModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Mode Buttons within Inspector Modal
+    const modeButtons = document.querySelectorAll('.mode-btn');
+    modeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modeButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'ink-border-heavy', 'shadow-sm');
+          b.classList.add('text-on-surface-variant', 'font-medium');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'ink-border-heavy', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant', 'font-medium');
+      });
+    });
+
+    // Form Submission Feedback
+    function handlePostSubmit(e) {
+      e.preventDefault();
+      const successMsg = document.getElementById('submitSuccess');
+      successMsg.classList.remove('hidden');
+      setTimeout(() => {
+        e.target.reset();
+      }, 500);
+      setTimeout(() => {
+        successMsg.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</body></html>
